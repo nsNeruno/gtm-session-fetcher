@@ -24,7 +24,7 @@
   NSUInteger _arrayIndex;  // Index in the array of the current NSData.
   long long _dataOffset;   // Offset in the current NSData we are processing.
   NSStreamStatus _streamStatus;
-  id<NSStreamDelegate> __weak _delegate;  // Stream delegate, defaults to self.
+  id<NSStreamDelegate> _delegate;  // Stream delegate, defaults to self.
 }
 
 + (instancetype)streamWithArray:(NSArray *)dataArray {
