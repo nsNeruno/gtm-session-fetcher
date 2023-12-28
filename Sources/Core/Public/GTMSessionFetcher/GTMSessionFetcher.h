@@ -660,7 +660,7 @@ typedef void (^GTMFetcherDecoratorFetcherWillStartCompletionHandler)(NSURLReques
 
 - (GTMSessionFetcher *)fetcherWithRequest:(NSURLRequest *)request;
 
-@property(atomic, strong, null_resettable, readonly) dispatch_queue_t callbackQueue;
+@property(atomic, assign, null_resettable, readonly) dispatch_queue_t callbackQueue;
 
 // These properties are being removed from the protocol; clients should not attempt new
 // accesses to them.
