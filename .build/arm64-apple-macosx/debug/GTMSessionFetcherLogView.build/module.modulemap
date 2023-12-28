@@ -1,0 +1,4 @@
+module GTMSessionFetcherLogView {
+    umbrella "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/LogView/Public"
+    export *
+}

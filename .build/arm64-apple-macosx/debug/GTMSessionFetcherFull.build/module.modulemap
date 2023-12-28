@@ -1,0 +1,4 @@
+module GTMSessionFetcherFull {
+    umbrella "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/Full/Public"
+    export *
+}

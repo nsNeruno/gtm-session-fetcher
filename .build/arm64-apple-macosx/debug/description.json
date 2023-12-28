@@ -1,0 +1,246 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherPackageTests.xctest/Contents/MacOS/GTMSessionFetcherPackageTests",
+      "productName" : "GTMSessionFetcherPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.swift-test-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "importPath" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/SwiftPMTests/SwiftImportTest/ImportTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherCore.build/GTMSessionFetcher.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherCore.build/GTMSessionFetcherLogging.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherCore.build/GTMSessionFetcherService.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherCore.build/GTMSessionUploadFetcher.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherFull.build/GTMGatherInputStream.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherFull.build/GTMMIMEDocument.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherFull.build/GTMReadMonitorInputStream.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherLogView.build/GTMSessionFetcherLogViewController.m.o"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "swift_test",
+      "moduleOutputPath" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/swift_test.swiftmodule",
+      "objects" : [
+        "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/swift_test.build/ImportTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherLogView.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/LogView/Public",
+        "-Xcc",
+        "-fmodule-map-file=/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherFull.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/Full/Public",
+        "-Xcc",
+        "-fmodule-map-file=/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherCore.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/Core/Public",
+        "-module-cache-path",
+        "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/swift_test.build/ImportTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/swift_test.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/SwiftPMTests/SwiftImportTest/ImportTests.swift"
+      ],
+      "tempsPath" : "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/swift_test.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "swift_test" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "swift_test",
+      "-incremental",
+      "-c",
+      "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/SwiftPMTests/SwiftImportTest/ImportTests.swift",
+      "-I",
+      "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-swift-version",
+      "5",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-g",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherLogView.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/LogView/Public",
+      "-Xcc",
+      "-fmodule-map-file=/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherFull.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/Full/Public",
+      "-Xcc",
+      "-fmodule-map-file=/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/GTMSessionFetcherCore.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/Sources/Core/Public",
+      "-module-cache-path",
+      "/Users/soluixdeveloper/Xcode Projects/gtm-session-fetcher/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "GTMSessionFetcherCore" : [
+
+    ],
+    "GTMSessionFetcherCoreTests" : [
+      "GTMSessionFetcherFull",
+      "GTMSessionFetcherCore"
+    ],
+    "GTMSessionFetcherFull" : [
+      "GTMSessionFetcherCore"
+    ],
+    "GTMSessionFetcherLogView" : [
+      "GTMSessionFetcherCore"
+    ],
+    "GTMSessionFetcherUserAgentTests" : [
+      "GTMSessionFetcherCore"
+    ],
+    "objc_import_test" : [
+      "GTMSessionFetcherLogView",
+      "GTMSessionFetcherFull",
+      "GTMSessionFetcherCore"
+    ],
+    "swift_test" : [
+      "GTMSessionFetcherLogView",
+      "GTMSessionFetcherFull",
+      "GTMSessionFetcherCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  }
+}
