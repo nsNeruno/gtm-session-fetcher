@@ -412,7 +412,9 @@ static void SearchDataForBytes(NSData *data, const void *targetBytes, NSUInteger
         // and map that two-byte subrange.
         const void *partDataBuffer;
         size_t partDataBufferSize;
-        dispatch_data_t mappedPartData NS_VALID_UNTIL_END_OF_SCOPE =
+        // dispatch_data_t mappedPartData NS_VALID_UNTIL_END_OF_SCOPE =
+        //     dispatch_data_create_map(partData, &partDataBuffer, &partDataBufferSize);
+        dispatch_data_t mappedPartData =
             dispatch_data_create_map(partData, &partDataBuffer, &partDataBufferSize);
         dispatch_data_t bodyData;
         NSDictionary *headers;
