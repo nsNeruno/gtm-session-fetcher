@@ -582,7 +582,7 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
 // This protocol allows us to call into the service without requiring
 // GTMSessionFetcherService sources in this project
 
-@property(strong) dispatch_queue_t callbackQueue;
+@property(assign) dispatch_queue_t callbackQueue;
 
 - (BOOL)fetcherShouldBeginFetching:(GTMSessionFetcher *)fetcher;
 - (void)fetcherDidCreateSession:(GTMSessionFetcher *)fetcher;
@@ -990,7 +990,7 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
 @property(copy, GTM_NULLABLE) NSString *log;
 
 // Callbacks are run on this queue.  If none is supplied, the main queue is used.
-@property(strong, GTM_NULL_RESETTABLE) dispatch_queue_t callbackQueue;
+@property(assign, GTM_NULL_RESETTABLE) dispatch_queue_t callbackQueue;
 
 // The queue used internally by the session to invoke its delegate methods in the fetcher.
 //

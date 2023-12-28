@@ -51,7 +51,7 @@ extern NSString *const kGTMSessionFetcherServiceSessionKey;
 @property(atomic, strong, GTM_NULLABLE) NSURLSessionConfiguration *configuration;
 @property(atomic, copy, GTM_NULLABLE) GTMSessionFetcherConfigurationBlock configurationBlock;
 @property(atomic, strong, GTM_NULLABLE) NSHTTPCookieStorage *cookieStorage;
-@property(atomic, strong, GTM_NULLABLE) dispatch_queue_t callbackQueue;
+@property(atomic, assign, GTM_NULLABLE) dispatch_queue_t callbackQueue;
 @property(atomic, strong, GTM_NULLABLE) NSURLCredential *credential;
 @property(atomic, strong) NSURLCredential *proxyCredential;
 @property(atomic, copy, GTM_NULLABLE) GTM_NSArrayOf(NSString *) *allowedInsecureSchemes;
