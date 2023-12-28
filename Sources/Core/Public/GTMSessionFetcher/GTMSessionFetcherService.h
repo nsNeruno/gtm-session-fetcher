@@ -53,7 +53,7 @@ extern NSString *const kGTMSessionFetcherServiceSessionKey;
 @property(atomic, strong, nullable) NSURLSessionConfiguration *configuration;
 @property(atomic, copy, nullable) GTMSessionFetcherConfigurationBlock configurationBlock;
 @property(atomic, strong, nullable) NSHTTPCookieStorage *cookieStorage;
-@property(atomic, strong, null_resettable) dispatch_queue_t callbackQueue;
+@property(atomic, assign, null_resettable) dispatch_queue_t callbackQueue;
 @property(atomic, copy, nullable) GTMSessionFetcherChallengeBlock challengeBlock;
 @property(atomic, strong, nullable) NSURLCredential *credential;
 @property(atomic, strong) NSURLCredential *proxyCredential;

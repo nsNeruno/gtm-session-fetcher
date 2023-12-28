@@ -1196,7 +1196,7 @@ __deprecated_msg("implement GTMSessionFetcherAuthorizer instead")
 //
 // CAUTION: This block MUST be a serial queue. Setting a concurrent queue can result in callbacks
 // being dispatched concurrently, leading events to appear out-of-order.
-@property(atomic, strong, null_resettable) dispatch_queue_t callbackQueue;
+@property(atomic, assign, null_resettable) dispatch_queue_t callbackQueue;
 
 // The queue used internally by the session to invoke its delegate methods in the fetcher.
 //
