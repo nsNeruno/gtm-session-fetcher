@@ -1571,7 +1571,11 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
   // Avoid releasing blocks in the sync section since objects dealloc'd by
   // the blocks being released may call back into the fetcher or fetcher
   // service.
-  dispatch_queue_t NS_VALID_UNTIL_END_OF_SCOPE holdCallbackQueue;
+  //
+  // Commented due to error: Objc_precise_lifetime only applies to retainable types; type here is 'dispatch_queue_t' (aka 'struct dispatch_queue_s *')
+  // dispatch_queue_t NS_VALID_UNTIL_END_OF_SCOPE holdCallbackQueue;
+  // Using below line without NS_VALID_UNTIL_END_OF_SCOPE flag
+  dispatch_queue_t holdCallbackQueue;
   GTMSessionFetcherCompletionHandler NS_VALID_UNTIL_END_OF_SCOPE holdCompletionHandler;
   @synchronized(self) {
     GTMSessionMonitorSynchronized(self);
