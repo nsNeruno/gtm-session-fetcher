@@ -363,15 +363,15 @@ static void SearchDataForBytes(NSData *data, const void *targetBytes, NSUInteger
   // Wrap the full document data with a dispatch_data_t for more efficient slicing
   // and dicing.
   dispatch_data_t dataWrapper;
-  if ([fullDocumentData conformsToProtocol:@protocol(OS_dispatch_data)]) {
-    dataWrapper = (dispatch_data_t)fullDocumentData;
-  } else {
+  // if ([fullDocumentData conformsToProtocol:@protocol(OS_dispatch_data)]) {
+  //   dataWrapper = (dispatch_data_t)fullDocumentData;
+  // } else {
     // A no-op self invocation on fullDocumentData will keep it retained until the block is invoked.
     dispatch_queue_t bgQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dataWrapper = dispatch_data_create(fullDocumentData.bytes,
                                        fullDocumentData.length,
                                        bgQueue, ^{ [fullDocumentData self]; });
-  }
+  // }
   NSMutableArray *parts;
   NSInteger previousBoundaryOffset = -1;
   NSInteger partCounter = -1;
