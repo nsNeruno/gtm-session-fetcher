@@ -17,9 +17,9 @@
 
 #if TARGET_OS_IOS || TARGET_OS_MACCATALYST
 
-#if !defined(__has_feature) || !__has_feature(objc_arc)
-#error "This file requires ARC support."
-#endif
+// #if !defined(__has_feature) || !__has_feature(objc_arc)
+// #error "This file requires ARC support."
+// #endif
 
 #import "GTMSessionFetcher/GTMSessionFetcherLogViewController.h"
 

@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-#if !defined(__has_feature) || !__has_feature(objc_arc)
-#error "This file requires ARC support."
-#endif
+// #if !defined(__has_feature) || !__has_feature(objc_arc)
+// #error "This file requires ARC support."
+// #endif
 
 #import "GTMSessionFetcher/GTMMIMEDocument.h"
 
@@ -353,15 +353,15 @@ static void SearchDataForBytes(NSData *data, const void *targetBytes, NSUInteger
   // Wrap the full document data with a dispatch_data_t for more efficient slicing
   // and dicing.
   dispatch_data_t dataWrapper;
-  if ([fullDocumentData conformsToProtocol:@protocol(OS_dispatch_data)]) {
-    dataWrapper = (dispatch_data_t)fullDocumentData;
-  } else {
+  // if ([fullDocumentData conformsToProtocol:@protocol(OS_dispatch_data)]) {
+  //   dataWrapper = (dispatch_data_t)fullDocumentData;
+  // } else {
     // A no-op self invocation on fullDocumentData will keep it retained until the block is invoked.
     dispatch_queue_t bgQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dataWrapper = dispatch_data_create(fullDocumentData.bytes, fullDocumentData.length, bgQueue, ^{
       [fullDocumentData self];
     });
-  }
+  // }
   NSMutableArray *parts;
   NSInteger previousBoundaryOffset = -1;
 #if DEBUG
@@ -410,7 +410,7 @@ static void SearchDataForBytes(NSData *data, const void *targetBytes, NSUInteger
         // warning is not available in all Xcodes, turn off the -Wunused warning group entirely.
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused"
-        dispatch_data_t mappedPartData NS_VALID_UNTIL_END_OF_SCOPE =
+        dispatch_data_t mappedPartData =
             dispatch_data_create_map(partData, &partDataBuffer, &partDataBufferSize);
 #pragma clang diagnostic pop
         dispatch_data_t bodyData;
